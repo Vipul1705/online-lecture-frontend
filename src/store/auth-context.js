@@ -6,8 +6,8 @@ export const AuthContext = React.createContext({
 
 const AuthContextProvider = (props) => {
   const [userData, setUserData] = useState({
-    userId: null,
-    username: null,
+    user_id: null,
+    name: null,
     role: null,
     accessToken: null,
     isLoggedIn: false,
@@ -17,8 +17,8 @@ const AuthContextProvider = (props) => {
   useEffect(() => {
     if (sessionStorage.getItem("isLoggedIn")) {
       setUserData({
-        username: sessionStorage.getItem("username"),
-        userId: sessionStorage.getItem("userId"),
+        name: sessionStorage.getItem("name"),
+        user_id: sessionStorage.getItem("user_id"),
         role: sessionStorage.getItem("role"),
         isLoggedIn: sessionStorage.getItem("isLoggedIn"),
         accessToken: sessionStorage.getItem("accessToken"),

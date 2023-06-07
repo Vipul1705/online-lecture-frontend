@@ -1,6 +1,5 @@
 import React from "react";
 import NavBar from "./NavBar/NavBar";
-import "./Layout.css";
 import { Outlet } from "react-router-dom";
 
 const Layout = ({ children }) => {

@@ -1,13 +1,7 @@
 import React from "react";
-import {
-  Button,
-  Typography,
-  Toolbar,
-  IconButton,
-  Box,
-  AppBar,
-} from "@mui/material";
+import { Typography, Toolbar, IconButton, AppBar } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
+import LoginNav from "./LoginNav";
 
 const DesktopNav = ({ navItems, onClickHandler }) => {
   return (
@@ -29,13 +23,7 @@ const DesktopNav = ({ navItems, onClickHandler }) => {
         >
           Online Lecture Scheduling
         </Typography>
-        <Box sx={{ display: { xs: "none", sm: "block" } }}>
-          {navItems.map((item) => (
-            <Button key={item} sx={{ color: "#fff" }}>
-              {item}
-            </Button>
-          ))}
-        </Box>
+        <LoginNav />
       </Toolbar>
     </AppBar>
   );

@@ -9,8 +9,8 @@ import useAuth from "../hooks/use-auth";
 const logoutTimer = 10 * 60 * 1000;
 const warningTimer = 15 * 60 * 1000;
 
-const ProtectedRoutes = ({ children, isAllowed, allowedRoles }) => {
-  const userData = useAuth();
+const ProtectedRoutes = ({ children, allowedRoles }) => {
+  const { userData } = useAuth();
   const { isLoggedIn } = userData;
   const onLogout = useLogout();
   const refresh = useRefreshToken();
