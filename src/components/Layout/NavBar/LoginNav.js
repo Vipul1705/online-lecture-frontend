@@ -60,8 +60,8 @@ const LoginNav = () => {
               >
                 <Typography
                   sx={{ color: "white", ml: "5px" }}
-                  variant="h4"
-                  component="h4"
+                  variant="h5"
+                  component="h5"
                 >
                   {userData?.name}
                 </Typography>

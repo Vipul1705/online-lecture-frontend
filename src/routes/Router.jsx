@@ -7,7 +7,7 @@ import NewCoursePage from "../pages/AdminPage/NewCoursePage";
 import AdminPage from "../pages/AdminPage";
 import ProtectedRoutes from "../routes/ProtectedRoutes";
 import InstructorPage from "../pages/InstructorPage";
-
+import CoursePage from "../pages/AdminPage/CoursePage";
 export const router = createBrowserRouter([
   {
     path: "/",
@@ -36,7 +36,7 @@ export const router = createBrowserRouter([
           },
           {
             path: "courses",
-            element: <NewCoursePage />,
+            element: <CoursePage />,
           },
         ],
       },

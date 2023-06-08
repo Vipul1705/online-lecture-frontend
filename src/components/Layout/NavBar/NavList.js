@@ -9,20 +9,19 @@ const NavList = () => {
   const navLinks = [];
   if (userData.role === "instructor") {
     navLinks.push(
-      <NavLink key="worklist" to="/">
+      <NavLink key="home" to="/">
         Home
       </NavLink>
     );
   }
-
   if (userData.role === "admin") {
     navLinks.push(
-      <NavLink key="home" to="/admin">
+      <NavLink key="ad" to="/admin">
         Instructors
       </NavLink>
     );
     navLinks.push(
-      <NavLink key="home" to="/admin/courses">
+      <NavLink key="courses" to="/admin/courses">
         Courses
       </NavLink>
     );
